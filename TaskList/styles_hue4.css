@@ -1,0 +1,137 @@
+/*author: Lisa Miesenböck, 1910456020
+ *Homework 4
+ *created: 07.05.2020
+ *description: this css, styles the form from form_hue4.html and styles_hue4.css
+ *of hü4
+ */
+
+body{
+    font-family: Calibri;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #6d7a7b;
+}
+
+.tasklist{
+    float:left;
+    padding-right: 50px;
+    width: 500px;
+}
+
+.datebox{
+    float:left;
+}
+
+.div1{
+    border: #222222 1px solid;
+    padding: 20px;
+    height: 250px;
+    margin: 20px;
+    background-color: #DEDEDE;
+}
+
+.div2{
+    border: #222222 1px solid;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    background-color: #DEDEDE;
+}
+
+.div3{
+    border: #222222 1px solid;
+    padding: 20px;
+    margin: 20px;
+    height: auto;
+    background-color: #DEDEDE;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    width: 150px;
+    height: 20px;
+}
+
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+
+textarea{
+    width:100%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 150px;
+    border: 1px solid;
+    border-color: #222222;
+    font-size: 15px;
+    padding: 10px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: #222222;
+    font-size: 15px;
+}
+.button_group{
+    margin-top: 40px;
+}
+
+.radios{
+    margin-top: 30px;
+}
+
+#sel{
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid;
+    border-color: #222222;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #77797c;
+}
+
+.div2 input{
+    margin: 5px;
+}
+
+.datumsfiler{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.prioritätsfilter{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.kategoriefilter{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.filterlöschen{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}

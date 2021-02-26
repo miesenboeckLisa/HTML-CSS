@@ -1,0 +1,219 @@
+{
+  "user" : 0,
+  "lists" : [
+    {
+      "listName" : "Liste1",
+      "listId" : 1,
+      "listStatus" : "offen",
+      "creator" : "Max Mustermann",
+      "dueDate" : "2021-01-15",
+      "totalPrice" : 100,
+      "articles" : [
+        {
+          "articleName" : "Milch",
+          "articleUnit" : "Liter",
+          "articleId" : 1,
+          "maxPrice" : 5,
+          "numOfArticles" : 3
+        },
+        {
+          "articleName" : "Bier",
+          "articleUnit" : "Kiste",
+          "articleId" : 2,
+          "maxPrice" : 25,
+          "numOfArticles" : 3
+        },
+        {
+          "articleName" : "Nutella",
+          "articleUnit" : "Glas",
+          "articleId" : 3,
+          "maxPrice" : 9,
+          "numOfArticles" : 2
+        }
+      ]
+    },
+    {
+      "listName" : "Liste2",
+      "listId" : 2,
+      "listStatus" : "offen",
+      "creator" : "Frieda Freiwild",
+      "dueDate" : "2021-02-21",
+      "totalPrice" : 50,
+      "articles" : [
+        {
+          "articleName" : "Brot",
+          "articleUnit" : "Stück",
+          "articleId" : 1,
+          "maxPrice" : 4,
+          "numOfArticles" : 1
+        },
+        {
+          "articleName" : "Wein",
+          "articleUnit" : "Flasche",
+          "articleId" : 2,
+          "maxPrice" : 20,
+          "numOfArticles" : 6
+        },
+        {
+          "articleName" : "Chips",
+          "articleUnit" : "Tüten",
+          "articleId" : 3,
+          "maxPrice" : 9,
+          "numOfArticles" : 3
+        },
+        {
+          "articleName" : "Brokkoli",
+          "articleUnit" : "Stück",
+          "articleId" : 4,
+          "maxPrice" : 5,
+          "numOfArticles" : 2
+        },
+        {
+          "articleName" : "Äpfel",
+          "articleUnit" : "kg",
+          "articleId" : 5,
+          "maxPrice" : 6,
+          "numOfArticles" : 3
+        },
+        {
+          "articleName" : "Bananen",
+          "articleUnit" : "Stück",
+          "articleId" : 6,
+          "maxPrice" : 4,
+          "numOfArticles" : 5
+        },
+        {
+          "articleName" : "Müsli",
+          "articleUnit" : "Packung",
+          "articleId" : 7,
+          "maxPrice" : 5,
+          "numOfArticles" : 1
+        }
+      ]
+    },
+    {
+      "listName" : "Liste3",
+      "listId" : 3,
+      "listStatus" : "offen",
+      "creator" : "Anton Tiroler",
+      "dueDate" : "2021-02-05",
+      "totalPrice" : 10,
+      "articles" : [
+        {
+          "articleName" : "Käse",
+          "articleUnit" : "Stück",
+          "articleId" : 1,
+          "maxPrice" : 4,
+          "numOfArticles" : 1
+        },
+        {
+          "articleName" : "Schinken",
+          "articleUnit" : "Gramm",
+          "articleId" : 2,
+          "maxPrice" : 5,
+          "numOfArticles" : 250
+        },
+        {
+          "articleName" : "Eier",
+          "articleUnit" : "Schachtel",
+          "articleId" : 3,
+          "maxPrice" : 5,
+          "numOfArticles" : 1
+        }
+      ]
+    },
+    {
+      "listName" : "Liste4",
+      "listId" : 4,
+      "listStatus" : "offen",
+      "creator" : "Laura Riener",
+      "dueDate" : "2021-01-21",
+      "totalPrice" : 30,
+      "articles" : [
+        {
+          "articleName" : "Ananas",
+          "articleUnit" : "Stück",
+          "articleId" : 1,
+          "maxPrice" : 4,
+          "numOfArticles" : 1
+        },
+        {
+          "articleName" : "Karotten",
+          "articleUnit" : "kg",
+          "articleId" : 2,
+          "maxPrice" : 6,
+          "numOfArticles" : 2
+        },
+        {
+          "articleName" : "Kürbis",
+          "articleUnit" : "kg",
+          "articleId" : 3,
+          "maxPrice" : 8,
+          "numOfArticles" : 2
+        },
+        {
+          "articleName" : "Blattspinat",
+          "articleUnit" : "Gramm",
+          "articleId" : 4,
+          "maxPrice" : 5,
+          "numOfArticles" : 300
+        },
+        {
+          "articleName" : "Kokosflocken",
+          "articleUnit" : "Gramm",
+          "articleId" : 5,
+          "maxPrice" : 5,
+          "numOfArticles" : 250
+        }
+      ]
+    },
+    {
+      "listName" : "Liste5",
+      "listId" : 5,
+      "listStatus" : "offen",
+      "creator" : "Linda Fürst",
+      "dueDate" : "2021-02-21",
+      "totalPrice" : 50,
+      "articles" : [
+        {
+          "articleName" : "Bier",
+          "articleUnit" : "Kisten",
+          "articleId" : 1,
+          "maxPrice" : 50,
+          "numOfArticles" : 2
+        },
+        {
+          "articleName" : "Karotten",
+          "articleUnit" : "kg",
+          "articleId" : 2,
+          "maxPrice" : 6,
+          "numOfArticles" : 2
+        }
+      ]
+    },
+    {
+      "listName" : "Liste6",
+      "listId" : 6,
+      "listStatus" : "offen",
+      "creator" : "Anton Tiroler",
+      "dueDate" : "2021-02-09",
+      "totalPrice" : 10,
+      "articles" : [
+        {
+          "articleName" : "Käse",
+          "articleUnit" : "Stück",
+          "articleId" : 1,
+          "maxPrice" : 4,
+          "numOfArticles" : 1
+        },
+        {
+          "articleName" : "Eier",
+          "articleUnit" : "Schachtel",
+          "articleId" : 2,
+          "maxPrice" : 5,
+          "numOfArticles" : 1
+        }
+      ]
+    }
+  ]
+}

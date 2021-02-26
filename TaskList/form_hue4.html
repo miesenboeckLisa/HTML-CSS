@@ -1,0 +1,119 @@
+<!--
+*author: Lisa Miesenböck, 1910456020
+*Homework 4
+*created: 07.05.2020
+*description: this html-code create an online form
+and is connected with styles_hue4.css and form_hue04.js
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aufgabeliste</title>
+    <link rel="stylesheet" type="text/css" href="styles_hue4.css">
+</head>
+<body>
+<h1>Aufgabeliste</h1>
+<form class="div1">
+    <div class="tasklist">
+        <label for="title">Title:</label> <input type="text" name="title" id="title" required/>
+        <br>
+        <label for="bezeichnung">Bezeichnung:</label> <textarea id="bezeichnung"></textarea>
+    </div>
+    <label>
+        Fälligkeitsdatum:
+        <input type="date" id="date">
+    </label>
+    <br>
+    <label for="sel">Kategorie:
+        <select name="kategory" id="sel">
+            <option>OPP</option>
+            <option>WHM</option>
+            <option>BS-IT</option>
+        </select>
+    </label>
+
+        <div class="radios">
+            <label> Priorität:
+                <br>
+                <input type="radio" id="hoch" name="priorität" value="hoch">
+                <label for="hoch">hoch</label> <br>
+                <input type="radio" id="mittel" name="priorität" value="mittel">
+                <label for="mittel"> mittel</label> <br>
+                <input type="radio" id="niedrig" name="priorität" value="niedrig">
+                <label for="niedrig"> niedrig</label>
+            </label>
+        </div>
+
+        <div class="button_group">
+            <button type="button" value="anlegen" class="anlegen">Aufgabe anlegen</button>
+            <button type="button" value="löschen" class="löschen">Alle Aufgaben löschen</button>
+        </div>
+</form>
+
+
+<div class="div2">
+    <fieldset class="datumsfiler">
+        <legend>Datumsfilter</legend>
+        <label> von: <input type="date" id="dateFil1"> </label> <br>
+        <label> bis: <input type="date" id="dateFil2"> </label> <br>
+        <button type="button" value="Filter" class="dateFil">Filter</button>
+    </fieldset>
+    <fieldset class="prioritätsfilter">
+        <legend>Prioritäsfilter</legend>
+        <label>
+            <input type="radio" id="prioHoch" name="prio" value="hoch" checked>
+            <label for="prioHoch"> hoch</label> <br>
+            <input type="radio" id="prioMittel" name="prio" value="mittel">
+            <label for="prioMittel"> mittel</label> <br>
+            <input type="radio" id="prioNiedrig" name="prio" value="niedrig">
+            <label for="prioNiedrig"> niedrig</label> <br>
+            <br>
+            <button type="button" value="Filter" class="prioFil">Filter</button>
+        </label>
+    </fieldset>
+    <fieldset class="kategoriefilter">
+        <legend>Kategoriefilter</legend>
+        <label for="selKat">
+            <select name="kategory" id="selKat">
+                <option>OPP</option>
+                <option>WHM</option>
+                <option>BS-IT</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <button type="button" value="Filter" class="katFil">Filter</button>
+    </fieldset>
+    <div class="filterlöschen">
+        <button type="button" value="Filter aufheben" class="FilAufheben">Filter aufheben</button>
+    </div>
+
+</div>
+
+<div class="div3">
+    <table>
+        <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Titel</th>
+            <th>Bezeichnung</th>
+            <th>Kategorie</th>
+            <th>Priorität</th>
+            <th>Löschen</th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="form_hue04.js"></script>
+</html>

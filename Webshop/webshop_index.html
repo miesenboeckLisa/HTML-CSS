@@ -1,0 +1,124 @@
+<!--
+*author: Lisa Miesenböck
+*description: this html-code is the basis for the kwm-webshop
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webshop</title>
+</head>
+<link rel="stylesheet" type="text/css" href="webshop_styles.css"></link>
+<body>
+<h1>Welcome to the Webshop! Let's go shopping!</h1>
+
+<!-- Quelle der Tab:Control: https://www.w3schools.com/howto/howto_js_tabs.asp -->
+<div class="tab">
+    <button class="tablinks" onclick="openItems(event, 'dress')" >Kleider</button>
+    <button class="tablinks" onclick="openItems(event, 'blouse')">Blusen</button>
+    <button class="tablinks" onclick="openItems(event, 'shoe')">Schuhe</button>
+</div>
+
+<!-- Tab content -->
+<div id="dress" class="tabcontent">
+    <h3>Kleider</h3>
+    <div class="imgBlock">
+        <figure>
+            <img src="image/kleid_1.JPG" alt="violett dress" id="dress1" class="img">
+            <figcaption class="description">Violettes Kleid</figcaption>
+            <br>
+            <figcaption>Preis: <span class="price">25</span>€</figcaption>
+            <button class="store">in den Warenkorb</button>
+        </figure>
+
+        <figure>
+            <img src="image/kleid_2.JPG" alt="black dress" id="dress2" class="img">
+            <figcaption class="description">Schwarzes Blusenkleid</figcaption>
+            <br>
+            <figcaption>Preis: <span class="price">30</span>€</figcaption>
+            <button class="store">in den Warenkorb</button>
+        </figure>
+
+        <figure>
+            <img src="image/kleid_3.JPG" alt="blue dress" id="dress3" class="img">
+            <figcaption class="description">Blaues Kleid</figcaption>
+            <br>
+            <figcaption>Preis: <span class="price">35</span>€</figcaption>
+            <button class="store">in den Warenkorb</button>
+        </figure>
+    </div>
+</div>
+
+<div id="blouse" class="tabcontent">
+    <h3>Blusen</h3>
+    <div class="imgBlock">
+        <figure>
+            <img src="image/bluse_1.JPG" alt="black blouse" id="blouse1" class="img">
+            <figcaption class="description">Schwarze Bluse</figcaption>
+            <br>
+            <figcaption>Preis: <span class="price">10</span>€</figcaption>
+            <button class="store">in den Warenkorb</button>
+        </figure>
+
+        <figure>
+            <img src="image/bluse_2.JPG" alt="red blouse" id="blouse2" class="img">
+            <figcaption class="description">Rote Bluse</figcaption>
+            <br>
+            <figcaption>Preis: <span class="price">15</span>€</figcaption>
+            <button class="store">in den Warenkorb</button>
+        </figure>
+
+        <figure>
+            <img src="image/bluse_3.JPG" alt="yellow blouse" id="blouse3" class="img">
+            <figcaption class="description">Gelbe Bluse</figcaption>
+            <br>
+            <figcaption>Preis: <span class="price">30</span>€</figcaption>
+            <button class="store">in den Warenkorb</button>
+        </figure>
+    </div>
+</div>
+
+<div id="shoe" class="tabcontent">
+    <h3>Schuhe</h3>
+    <figure>
+        <img src="image/schuh_11.JPG" alt="adidas black" id="shoe1" class="img">
+        <figcaption class="description">Adidas</figcaption>
+        <br>
+        <figcaption>Preis: <span class="price">90</span>€</figcaption>
+        <button class="store">in den Warenkorb</button>
+    </figure>
+
+
+    <figure>
+        <img src="image/schuh_22.JPG" alt="converse" id="shoe2" class="img">
+        <figcaption class="description">Converse</figcaption>
+        <br>
+        <figcaption>Preis: <span  class="price">80</span>€</figcaption>
+        <button class="store">in den Warenkorb</button>
+    </figure>
+
+    <figure>
+        <img src="image/schuh_33.JPG" alt="adidas superstar" id="shoe3" class="img">
+        <figcaption class="description">Adidas - Superstar</figcaption>
+        <br>
+        <figcaption>Preis: <span class="price">110</span>€</figcaption>
+        <button class="store">in den Warenkorb</button>
+    </figure>
+</div>
+
+<div class="storeItems">
+    <h3>Willkommen im Warenkorb!</h3>
+    <p> hier findest du alle deine Artikel!</p>
+    <div class="imgBox"></div>
+    <div class="underImg">
+        <span>Wareneinkaufswert: <span class="summe">0</span>€</span>
+        <button class="order">kostenpflichtig bestellen</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="websjopJS.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+body{
+    font-family: 'Kufam', cursive;
+}
+
+
+.welcome-header1{
+    background-image: url("assets/carusel1.jpg");
+    min-height: 600px;
+    background-size: cover;
+}
+
+.welcome-header2{
+    background-image: url("assets/carusel2.jpg");
+    min-height: 600px;
+    background-size: cover;
+}
+
+.welcome-header3{
+    background-image: url("assets/carusel3.jpg");
+    min-height: 600px;
+    background-size: cover;
+
+}
+
+.elements{
+
+    grid-template-row: repeat(2,1fr);
+    grid-gap:1em;
+}
+
+.bg-custom{
+    background-color: rgba(20, 20, 20, 0.72);
+}
+
+.caruselDiv {
+    color: white;
+}
+
+.card img{
+    width: auto;
+    height: 10em;
+}
+
+.gridItems{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:1em;
+}
+
+
+.pborder{
+    border: black 1px solid;
+    padding: 1em;
+}
+
+.page-link{
+    color: black;
+}
+
+.page-link:hover{
+    color: #ff9c49;
+}
+
+.btn:hover{
+    background-color: #ff9c49;
+    border-color: #ff9c49;
+}
+
+.img-fluid{
+    width: 45em;
+}
+
+.img-hover{
+    overflow: hidden;
+    width: 50%;
+}
+
+.img-hover img{
+    transition: transform 0.5s ease;
+}
+.img-hover:hover img{
+    transform: scale(2.5);
+}
+
+
+.animation-rechteck{
+    padding: 1em;
+    background-color: rgba(214, 90, 29, 0.49);
+    animation-name: fade-out;
+    animation-delay: 1s;
+    animation-duration: 5s;
+
+}
+
+
+@keyframes fade-out {
+    /*0-100 ist genau das s0elbe wie From und To*/
+    0%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+
+}
+
+.animation-news{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    animation-name: slide-up;
+    padding: 1em;
+    /*animation-delay: 1s;*/
+    animation-duration: 5s;
+
+}
+
+@keyframes slide-up {
+    /*0-100 ist genau das selbe wie From und To*/
+    0%{
+        margin-top: 100%;
+    }
+
+    100%{
+        margin: 0%;
+    }
+
+}
+
+/* iPhoneX Responsive */
+
+@media (max-width: 720px) {
+    body {
+        font-size: 15px;
+        margin: 17px;
+    }
+
+    .gridItems{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.1em;
+
+    }
+
+
+    .welcome-header1{
+        background-image: url("assets/carusel1.jpg");
+        min-height: 450px;
+        background-size: cover;
+    }
+
+    .welcome-header2{
+        background-image: url("assets/carusel2.jpg");
+        min-height: 450px;
+        background-size: cover;
+    }
+
+    .welcome-header3{
+        background-image: url("assets/carusel3.jpg");
+        min-height: 450px;
+        background-size: cover;
+
+    }
+
+    .img-fluid{
+        width: 500px;
+    }
+
+    .card-img-top{
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    body {
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    .gridItems{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+
+    }
+
+
+    .welcome-header1{
+        background-image: url("assets/carusel1.jpg");
+        min-height: 450px;
+        background-size: cover;
+    }
+
+    .welcome-header2{
+        background-image: url("assets/carusel2.jpg");
+        min-height: 450px;
+        background-size: cover;
+    }
+
+    .welcome-header3{
+        background-image: url("assets/carusel3.jpg");
+        min-height: 450px;
+        background-size: cover;
+
+    }
+
+    .img-fluid{
+        width: 300px;
+    }
+}
+
+
+

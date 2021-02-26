@@ -1,0 +1,34 @@
+<!--
+*author: Lisa Miesenböck
+*description: this html-code is the basis for a dynamical
+*generated memory games by jQuery
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal-Memory</title>
+    <link rel="stylesheet" type="text/css" href="css_memory.css"></link>
+</head>
+<body>
+<h1>Animal-Memory</h1>
+<fieldset class="start_field">
+    <legend> Wähle einen Schwierigkeitsgrad aus: </legend>
+    <input type="radio" name="diff" id="easy" value="easy" checked>
+    <label for="easy">4x4 - leicht</label> <br>
+    <input type="radio" name="diff" id="medium" value="medium">
+    <label for="medium">4x6 - mittel</label> <br>
+    <input type="radio" name="diff" id="hard" value="hard">
+    <label for="hard">6x6 - schwer</label> <br> <br>
+    <button id="btn_start">Start</button>
+</fieldset>
+<div id="memoryField">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="memory_js.js"></script>
+</body>
+</html>
