@@ -1,0 +1,204 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:1em;
+}
+
+.listElement{
+    padding: 10px;
+    margin: 0.5em;
+    background-color: white;
+}
+
+a{
+    color: rgb(228, 224, 220);
+}
+
+
+h3 {
+    margin: 1px;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav {
+    list-style-type: none;
+    margin: 1em;
+    padding: 1em;
+    background-color: #e4daac;
+
+}
+nav a{
+    padding: 0.5em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+a:hover{
+    color: #bc5231;
+    font-weight: bold;
+}
+
+.edit{
+    background-color: bisque;
+}
+
+.delete{
+    background-color: rgba(139, 0, 0, 0.42);
+}
+
+.take{
+    background-color: rgba(148, 188, 51, 0.89);
+}
+
+.detail{
+    text-decoration: none;
+    color: red;
+}
+
+
+button{
+    border:none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+button.delete:hover {
+    background-color: rgba(139, 0, 0, 0.89);
+}
+
+button.edit:hover {
+    background-color: #ffdb8c;
+}
+
+button.take:hover {
+    background-color: #347a1e;
+}
+
+.buttonsEditDelete{
+    margin-top: 0.5em;
+}
+
+
+
+.header{
+    margin: 0.5em;
+    padding: 1em;
+    background-color: white;
+}
+
+
+p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentDetail{
+    margin:1em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 0.5em;
+    grid-column-gap: 0.5em;
+    place-items: stretch;
+    background-color: white;
+}
+
+table{
+    margin-left: 1em;
+    text-align: center;
+}
+
+
+thead{
+    text-decoration: underline black solid;
+}
+
+
+/* Responsive */
+@media (max-width: 720px) {
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1em;
+    }
+
+    body{
+        font-size: 14px;
+    }
+
+}
+
+
+/* iPhoneX Responsive */
+@media (max-width: 380px) {
+    body {
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+    }
+
+    button{
+        margin-right: 1em;
+    }
+}
+
+@media (max-width: 720px) {
+    .contentDetail {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1em;
+    }
+
+    body{
+        font-size: 15px;
+    }
+
+    button{
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+
+}
+
+#send{
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(255, 0, 0, 0.55);
+
+}
+
+#send:hover{
+    background-color: darkred;
+}
+
